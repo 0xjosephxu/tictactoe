@@ -27,7 +27,7 @@ export function AllGames({ selectedGameFunc }) {
 				// } else if (chainId == goerli_chainid) {
 				// 	register_address = "0xfD446a9c488bd5b4A4A1CBa014179fC3b178DaA6";
 				// }
-				register_address = register_address;
+				register_address = registry_address;
 				let registry_contract = new ethers.Contract(register_address, registry_abi, signer);
 				if (account) {
 					let tx = await registry_contract.getGameList(account);

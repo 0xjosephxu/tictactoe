@@ -33,9 +33,6 @@ export function NavBarConnect() {
 			<Container>
 				<Navbar.Brand href="#home">On-chain Tic Tac Toe</Navbar.Brand>
 				<Nav className="justify-content-end">
-					<Nav.Link href="https://github.com/durian0515/de-tictactoe" target="_blank">
-						Github
-					</Nav.Link>
 					{account ? (
 						<NavDropdown id="nav-dropdown-dark-example" title={truncateEthAddress(account)}>
 							<NavDropdown.Item href="#action/3.1" onClick={disconnectWallet}>
