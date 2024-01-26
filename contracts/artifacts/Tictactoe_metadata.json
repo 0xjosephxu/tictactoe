@@ -1,0 +1,148 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_playerTwo",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Unauthorized",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_playerId",
+						"type": "uint256"
+					}
+				],
+				"name": "checkState",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getGame",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPlayers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_move",
+						"type": "uint256"
+					}
+				],
+				"name": "move",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "newGame",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "A Game board is represented by a uint256,",
+			"kind": "dev",
+			"methods": {
+				"move(uint256)": {
+					"details": "here is what a board looks like 1st - 18th bits 00 00 00 |   0  1  2 00 00 00 |=  3  4  5 00 00 00 |   6  7  8",
+					"params": {
+						"_move": "the position `playerN` chooses to play"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"move(uint256)": {
+					"notice": "Adding move to the game board"
+				},
+				"newGame()": {
+					"notice": "a new game is created by appending 21bits to the current board"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Tictactoe.sol": "Tictactoe"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Tictactoe.sol": {
+			"keccak256": "0xabf2623db4441f1811d13ced75f55d4f6caa311852b2f3bc212102289d761bf7",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://895ae7915eabccf4a32f1e3dd7fdbe9cc0388c17a46aa0295caf286463ac54b9",
+				"dweb:/ipfs/QmTnFs2rTo9aZEWZxxS2KW6bQFMU6ExQqT9sQQERmfEeM1"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,184 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "gameContract",
+						"type": "address"
+					}
+				],
+				"name": "GameAlreadyExists",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "FirstPlayerGames",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "firstPlayer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "secondPlayer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "gameContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "SecondPlayerGames",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "firstPlayer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "secondPlayer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "gameContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_player",
+						"type": "address"
+					}
+				],
+				"name": "getGameList",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "firstPlayer",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "secondPlayer",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "gameContract",
+								"type": "address"
+							}
+						],
+						"internalType": "struct TictactoeRegistry.Game[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_firstPlayer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_secondPlayer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_gameContract",
+						"type": "address"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TictactoeRegistry.sol": "TictactoeRegistry"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TictactoeRegistry.sol": {
+			"keccak256": "0x98de6c484b407e5578dff33a698267b534f96350ce2a8fabbb7ce9c82a87b88e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a301d8bd3021c9acd29ba9f36c24bb7e590cb38edfcf1e6b229c7142bd8f6b43",
+				"dweb:/ipfs/QmaKQU9Ud44jFwMMNTUH64yhsE7vyuCB3iAaCQ7RWrdyh6"
+			]
+		}
+	},
+	"version": 1
+}
