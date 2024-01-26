@@ -160,13 +160,13 @@ export default function Board() {
 			<Container>
 				{show ? (
 					<Alert variant="info" onClose={() => setShow(false)} dismissible>
-						{This game works on Goerli Testnet. Please choose the correct chain on Metamask to proceed.*/}
+						{/*This game works on <Alert.Link href="https://scroll.io">Scroll Mainnet</Alert.Link>. Please choose the correct chain on Metamask to proceed.*/}
 					</Alert>
 				) : null}
 
 				{connectedOrNot ? null : (
 					<Alert variant="danger" onClose={() => setShow(false)} dismissible>
-						{Please make sure that your Metamask is connected to Goerli Testnet. Please choose the correct chain on Metamask to proceed.*/}
+						{/*Please make sure that your Metamask is connected to <Alert.Link href="https://scroll.io">Scroll Mainnet</Alert.Link>. Please choose the correct chain on Metamask to proceed.*/}
 					</Alert>
 				)}
 
